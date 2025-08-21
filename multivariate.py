@@ -5,6 +5,7 @@ from scipy.optimize import approx_fprime, _numdiff
 
 
 # SECOND NEW HEADER
+# YET another change
 def grad_fd(f, x, eps=1e-8):
     """Finite-difference gradient ∇f(x)."""
     x = np.asarray(x, dtype=float)
@@ -24,6 +25,7 @@ def hess_fd(f, x, rel_step=1e-6):
 
 
 # LET ME CHANGE THIS TOO
+# Wait another change?
 def newton(f, x0, tol=1e-8, max_iter=50):
     """
     Multivariate Newton:
