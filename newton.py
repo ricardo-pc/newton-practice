@@ -77,5 +77,6 @@ def optimize(x0, f, tol=1e-4):
     # if delta is less than tolerance, then output xnew
     return {"x": x_new, "value": f(x_new)}
 
+# suggested change right here 
 
 # %%
