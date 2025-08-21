@@ -3,6 +3,8 @@
 import numpy as np
 from scipy.optimize import approx_fprime, _numdiff
 
+
+# SECOND NEW HEADER
 def grad_fd(f, x, eps=1e-8):
     """Finite-difference gradient ∇f(x)."""
     x = np.asarray(x, dtype=float)
@@ -19,6 +21,9 @@ def hess_fd(f, x, rel_step=1e-6):
     # Then differentiate gradient with approx_derivative
     return _numdiff.approx_derivative(grad_fun, x, rel_step=rel_step)
 
+
+
+# LET ME CHANGE THIS TOO
 def newton(f, x0, tol=1e-8, max_iter=50):
     """
     Multivariate Newton:
@@ -34,3 +39,6 @@ def newton(f, x0, tol=1e-8, max_iter=50):
             return x_new
         x = x_new
     return x
+
+
+# CHECK THIS TOO
