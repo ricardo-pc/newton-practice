@@ -15,7 +15,7 @@
 
 # %%
 
-
+# something
 def deriv(f, x, eps=1e-16):
     """
     Function to obtain the derivative of a function
@@ -77,5 +77,6 @@ def optimize(x0, f, tol=1e-4):
     # if delta is less than tolerance, then output xnew
     return {"x": x_new, "value": f(x_new)}
 
+# suggested change right here 
 
 # %%
